@@ -1,0 +1,86 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montagu+Slab:wght@400;500;700&display=swap');
+
+:root {
+	/* colors */
+	--color-black: #101010;
+	--color-light-black: #282828;
+	--color-dark-gray: #636363;
+	--color-gray: #adadad;
+	--color-white: #ffffff;
+
+	/* fonts */
+	--font-main: 'Inter', sans-serif;
+	--font-secondary: 'Montagu Slab', serif;
+
+	/* animation */
+	--animation: 0.5s ease-in-out;
+
+	/*fonts*/
+	--font-size-xs: 16px;
+	--font-size-sm: 20px;
+	--font-size-md: 24px;
+	--font-size-lg: 48px;
+	--font-size-xl: 66px;
+	--font-size-xxl: 160px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	font-family: var(--font-main);
+	color: var(--color-black);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+#root{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main{
+	flex: 1;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+
+	object-fit: cover;
+	object-position: center;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+button{
+	border: none;
+	background: none;
+}
+

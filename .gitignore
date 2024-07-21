@@ -1,0 +1,247 @@
+.env*
+
+.vite
+.vscode
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Swap the comments on the following lines if you wish to use zero-installs
+# In that case, don't forget to run `yarn config set enableGlobalCache false`!
+# Documentation here: https://yarnpkg.com/features/caching#zero-installs
+
+#!.yarn/cache
+.pnp.*
+
+############################
+# OS X
+############################
+
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+
+
+############################
+# Linux
+############################
+
+*~
+
+
+############################
+# Windows
+############################
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+
+############################
+# Packages
+############################
+
+*.7z
+*.class
+*.com
+*.csv
+*.dat
+*.dll
+*.dmg
+*.exe
+*.gz
+*.iso
+*.jar
+*.o
+*.out
+*.pid
+*.pkg
+*.rar
+*.seed
+*.so
+*.swm
+*.swn
+*.swo
+*.swp
+*.tar
+*.zip
+
+
+############################
+# Logs and databases
+############################
+
+*.tmp
+*.log*
+*.sql
+*.sqlite
+*.sqlite3
+
+
+############################
+# Misc.
+############################
+
+*#
+*.pem
+ssl
+.idea
+nbproject
+public/uploads/*
+!public/uploads/.gitkeep
+.vscode
+.vs
+
+
+############################
+# Node.js
+############################
+
+lib-cov
+lcov.info
+pids
+logs
+results
+node_modules
+.node_history
+
+
+############################
+# testing
+############################
+
+coverage/
+
+
+############################
+# production
+############################
+
+build/
+dist/
+
+
+############################
+# strapi
+############################
+
+.strapi*
+generated/
+uploads/
+
+
+# Xcode
+!**/*.xcodeproj
+!**/*.pbxproj
+!**/*.xcworkspacedata
+!**/*.xcsettings
+!**/*.xcscheme
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# iOS
+codesigndoc_exports/
+ios/tmp.xcconfig
+
+# Gradle
+android/build/
+/build/
+/RNTester/android/app/build/
+/RNTester/android/app/gradle/
+/RNTester/android/app/gradlew
+/RNTester/android/app/gradlew.bat
+/ReactAndroid/build/
+/ReactAndroid/gradle/
+/ReactAndroid/gradlew
+/ReactAndroid/gradlew.bat
+
+# Buck
+.buckd
+buck-out
+/ReactAndroid/src/main/jni/prebuilt/lib/
+/ReactAndroid/src/main/gen
+
+# Android Studio
+.project
+.settings
+.classpath
+
+# Watchman
+.watchmanconfig
+
+# Android
+.gradle
+local.properties
+*.iml
+android/app/build
+index.android.bundle
+*.keystore
+*.hprof
+
+# OS X
+.DS_Store
+
+# Test generated files
+/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
+*.js.meta
+
+/third-party
+
+# Root dir shouldn't have Xcode project
+/*.xcodeproj
+
+# ReactCommon subdir shouldn't have Xcode project
+/ReactCommon/**/*.xcodeproj
+RNTester/build
+
+# Libs that shouldn't have Xcode project
+/Libraries/FBLazyVector/**/*.xcodeproj
+/Libraries/FBReactNativeSpec/**/*.xcodeproj
+/Libraries/RCTRequired/**/*.xcodeproj
+/React/CoreModules/**/*.xcodeproj
+/packages/react-native-codegen/**/*.xcodeproj
+
+# Ruby / CocoaPods
+/ios/Pods/
+/ios/build/
+/RNTester/Gemfile.lock
+/vendor/bundle/
+
+# Ignore RNTester specific Pods, but keep the __offline_mirrors__ here.
+RNTester/Pods/*
+!RNTester/Pods/__offline_mirrors
+
+# react-native-codegen
+/ReactCommon/fabric/components/rncore/
+/schema-rncore.json
+
+# Others
+tmp/
+*.tmp
+.bundle
