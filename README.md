@@ -31,11 +31,13 @@ K-SkinGlow is an online store that sells various skincare products. This project
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/kskinglow.git
-   cd kskinglow
+   git clone https://github.com/Anastasia-front/K-SkinGlow.git
+   or
+   git clone git@github.com:Anastasia-front/K-SkinGlow.git
+   cd K-SkinGlow
    ```
 
-2. Install dependencies:
+2. Install dependencies at all levels (root and packages front/back):
 
    ```bash
    npm install
@@ -44,10 +46,16 @@ K-SkinGlow is an online store that sells various skincare products. This project
 3. Set up environment variables:
    Create a .env file in the root directory and add your configuration settings (e.g., database URL, email/SMS API keys).
 
-4. Start the development server:
+4. Start the development server for back:
 
    ```bash
    npm start
+   ```
+
+4. Start the development server for front:
+
+   ```bash
+   npm run dev
    ```
 
 ## Usage

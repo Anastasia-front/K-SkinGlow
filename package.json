@@ -1,0 +1,32 @@
+{
+  "name": "k-skinglow",
+  "version": "1.0.0",
+  "description": "whole pet-project",
+  "main": "packages",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:back": "ts-node-dev src/index.ts",
+    "dev:front": "npx vite --cwd packages/front",
+    "build:front": "tsc -b && vite build",
+    "lint:front": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasia-front/K-SkinGlow.git"
+  },
+  "keywords": [
+    "online",
+    "store",
+    "korean",
+    "cosmetics"
+  ],
+  "author": "Anastasia Prysiazhna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anastasia-front/K-SkinGlow/issues"
+  },
+  "homepage": "https://github.com/Anastasia-front/K-SkinGlow#readme"
+}
