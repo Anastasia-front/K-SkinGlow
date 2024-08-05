@@ -1,5 +1,17 @@
+import { FetchData, Section } from 'src/components';
+
+import { routes } from 'src/constants';
+
+const { id, title } = routes.category;
+
 function Category() {
-	return <h1>{'Category'}</h1>;
+  return (
+    <main>
+      <Section id={id} title={title}>
+        <FetchData />
+      </Section>
+    </main>
+  );
 }
 
 export default Category;

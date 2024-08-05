@@ -7,8 +7,8 @@
     "packages/*"
   ],
   "scripts": {
-    "start:back": "ts-node-dev src/index.ts",
-    "dev:front": "npx vite --cwd packages/front",
+    "start:back": "ts-node-dev src/index.ts --cwd packages/back",
+    "dev:front": "cd packages/front && npx vite",
     "build:front": "tsc -b && vite build",
     "lint:front": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +28,16 @@
   "bugs": {
     "url": "https://github.com/Anastasia-front/K-SkinGlow/issues"
   },
-  "homepage": "https://github.com/Anastasia-front/K-SkinGlow#readme"
+  "homepage": "https://github.com/Anastasia-front/K-SkinGlow#readme",
+  "dependencies": {
+    "@eslint/js": "^9.8.0",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^5.3.5"
+  }
 }
