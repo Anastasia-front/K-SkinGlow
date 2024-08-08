@@ -52,3 +52,8 @@ export const headerNavigationLinks = [
     link: routes.orderDelivery.path,
   },
 ];
+
+export const contacts = [
+  { id: 1, name: 'mail', title: 'Email', contact: 'k-skinglow@gmail.com', href: 'mailto:k-skinglow@gmail.com' },
+  { id: 2, name: 'phone', title: 'Call Us', contact: '+38 099 008 00 88', href: 'tel:+380990080088' },
+];
