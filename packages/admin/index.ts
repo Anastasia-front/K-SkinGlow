@@ -4,6 +4,22 @@ const prisma = new PrismaClient();
 
 async function main() {
   // ... you will write your Prisma Client queries here
+  await prisma.user.create({
+    data: {
+      name: "Alice",
+      email: "alice@prisma.io",
+      password: "alice",
+    },
+  });
+
+  const allUsers = await prisma.user.findMany({
+    include: {
+      favorites: true,
+      reviews: true,
+    },
+  });
+  console.dir(allUsers, { depth: null });
+
   const allProducts = await prisma.product.create({
     data: {
       title: "product 1",
@@ -36,11 +52,11 @@ async function main() {
   // console.dir(allUsers, { depth: null });
   console.info(allProducts);
 
-  const product = await prisma.category.update({
-    where: { id: 1 },
-    data: { title: "cream" },
-  });
-  console.log(product);
+  // const product = await prisma.category.update({
+  //   where: { id: 1 },
+  //   data: { title: "cream" },
+  // });
+  // console.log(product);
 }
 
 main()
